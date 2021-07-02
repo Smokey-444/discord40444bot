@@ -7,7 +7,6 @@ bot.on('ready', () => {
     bot.user.setPresence({
         activity: {
             name: 'auf 👑Max sein Server👑',
-            url:  ' https://discord.gg/TtuDmbuC',
             type: 'PLAYING',
         }
     })
