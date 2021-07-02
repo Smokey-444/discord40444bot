@@ -27,7 +27,7 @@ bot.on('message', message => {
         message.channel.bulkDelete(parts[1])
         message.channel.send(`Ich habe erfolgreich **${parts[1]}** Nachrichten gelöscht!`).then(m => m.delete({timeout: 3000}))
     }
-    else if(parts[0] == 't!member') {
+    else if(parts[0] == 'tDiscord') {
         message.channel.send ( URL `https://discord.gg/TtuDmbuC`,)
     }
     else if(parts[0] == 't!owner') {
