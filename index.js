@@ -1,13 +1,12 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const prefix = 't!'
 
 bot.on('ready', () => {
     console.log('Der Bot ist nun Online!')
 
     bot.user.setPresence({
         activity: {
-            name: 't!help',
+            name: 'auf Maxi',
             type: 'PLAYING',
         }
     })
