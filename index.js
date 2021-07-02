@@ -8,7 +8,7 @@ bot.on('ready', () => {
 
     bot.user.setPresence({
         activity: {
-            name: 't!play',
+            name: 't!help',
             type: 'PLAYING',
         }
     })
