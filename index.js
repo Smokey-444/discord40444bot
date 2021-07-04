@@ -12,6 +12,20 @@ bot.on('ready', () => {
     })
 })
 
+client.on('chat', (channel, user, message, self) => {
+    if(message === '!help' || message === '!Help' || message === '!hilfe' || message === '!Hilfe') {
+        client.action('lemaxxxxxxx', 'Hi')
+    }
+    if(message === '!hi' || message === '!hey' || message === 'hi' || message === 'hey') {
+        client.action('lemaxxxxxxx', `Heyy, @${user.username}`)
+    }
+    if(message === '!dc' || message === '!Dc' || message === 'dc' || message === 'dc') {
+        client.action('lemaxxxxxxx', `Hier der discord limk, https://discord.gg/yQhVk6dwWn}`)
+        client.action('lemaxxxxxxx', `Hier der discord link @${user.username}, https://discord.gg/yQhVk6dwWn`)
+    }
+    // Kannst auch noch andere Befehle hinzufügen :D
+})
+
 bot.on('message', message => {
     let parts = message.content.split(" ");
 
